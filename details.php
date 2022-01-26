@@ -24,10 +24,10 @@
     }
 ?>
 <style>
-ol, ul {list-style: unset; margin: unset; padding: 16px;}
+/*ol, ul {list-style: unset; margin: unset; padding: 16px;}*/
 .showmsg{color: red; font-size: 18px;}
-.compare a { color: #fff; background: #602D8D; padding: 5px 15px; display: inline-block; margin: 10px 3px 0px 0px; border-radius: 2px; float: left;}
-.compare input[type="submit"] { color: #fff; background: #602D8D; padding: 5px 15px; display: inline-block; margin: 10px 3px 0px 0px; border-radius: 2px;font-size: 16px; border: 0; cursor:pointer;}
+.compare a { color: #fff; background: #ff5722; padding: 5px 15px; display: inline-block; margin: 10px 3px 0px 0px; border-radius: 2px; float: left;}
+.compare input[type="submit"] { color: #fff; background: #ff5722; padding: 5px 15px; display: inline-block; margin: 10px 3px 0px 0px; border-radius: 2px;font-size: 16px; border: 0; cursor:pointer;}
 </style>
 <div class="main">
     <div class="content">

@@ -14,12 +14,12 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `db_shop`
 --
-CREATE DATABASE IF NOT EXISTS `db_shop` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `db_shop` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `db_shop`;
 
 -- --------------------------------------------------------
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `tbl_admin` (
   `adminPass` varchar(32) NOT NULL,
   `level` tinyint(4) NOT NULL,
   PRIMARY KEY (`adminId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `tbl_admin`
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `tbl_brand` (
   `brandId` int(11) NOT NULL AUTO_INCREMENT,
   `brandName` varchar(255) NOT NULL,
   PRIMARY KEY (`brandId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `tbl_brand`
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `tbl_cart` (
   `quantity` int(11) NOT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`cartId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `tbl_cart`
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `tbl_category` (
   `catId` int(11) NOT NULL AUTO_INCREMENT,
   `catName` varchar(255) NOT NULL,
   PRIMARY KEY (`catId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `tbl_category`
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `tbl_customer` (
   `email` varchar(255) NOT NULL,
   `pass` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `tbl_customer`
@@ -170,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `tbl_order` (
   `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`orderId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=35 ;
 
 --
 -- Dumping data for table `tbl_order`
@@ -197,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
   `image` varchar(255) NOT NULL,
   `type` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`productId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `tbl_product`
@@ -222,7 +222,7 @@ CREATE TABLE IF NOT EXISTS `tbl_wlist` (
   `customerId` int(11) NOT NULL,
   `productId` int(11) NOT NULL,
   PRIMARY KEY (`wId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `tbl_wlist`

@@ -32,7 +32,7 @@
     <script src="js/jquery-ui/jquery.ui.sortable.min.js" type="text/javascript"></script>
     <script src="js/table/jquery.dataTables.min.js" type="text/javascript"></script>
     <!-- END: load jquery -->
-    <script type="text/javascript" src="js/table/table.js"></script>
+    <!-- <script type="text/javascript" src="js/table/table.js"></script> -->
     <script src="js/setup.js" type="text/javascript"></script>
 	 <script type="text/javascript">
         $(document).ready(function () {
@@ -46,12 +46,11 @@
     <div class="container_12">
         <div class="grid_12 header-repeat">
             <div id="branding">
-                <div class="floatleft logo">
-                    <img src="img/livelogo.png" alt="Logo" />
+                <div class="logo floatleft">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style="fill: #fff;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
 				</div>
-				<div class="floatleft middle">
-					<h1>Training with live project</h1>
-					<p>www.trainingwithliveproject.com</p>
+				<div class="floatleft" style="color: #fff;">
+					<h1>eProduct Dashboard</h1>
 				</div>
                 <?php 
                     if (isset($_GET['action']) && $_GET['action'] == "logout") {

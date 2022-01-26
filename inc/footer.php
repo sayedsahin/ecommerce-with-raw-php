@@ -35,8 +35,8 @@
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Contact</h4>
 						<ul>
-							<li><span>+88-017xxxxxxx</span></li>
-							<li><span>+88-018xxxxxxx</span></li>
+							<li><span>+88-01231456781</span></li>
+							<li><span>+88-09876543210</span></li>
 						</ul>
 						<div class="social-icons">
 							<h4>Follow Us</h4>
@@ -51,10 +51,15 @@
 				</div>
 			</div>
 			<div class="copy_right">
-				<p>Online Store Bd &amp; All rights Reserved </p>
+				<p>eProdut &copy; All rights Reserved </p>
 		   </div>
      </div>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script> 
+		<script type="text/javascript" src="js/nav-hover.js"></script>
     <script type="text/javascript">
 		$(document).ready(function() {
 			/*

@@ -48,9 +48,11 @@
 					<td><?php echo $fm->textShorten($result["productName"], 30); ?></td>
 					<td><?php echo $result["catName"]; ?></td>
 					<td><?php echo $result["brandName"]; ?></td>
-					<td><?php echo $fm->textShorten($result["body"], 50); ?></td>
+					<td><?php echo strip_tags($fm->textShorten($result["body"], 50)); ?></td>
 					<td>$<?php echo $result["price"]; ?></td>
-					<td style="vertical-align: middle;"><img src="<?php echo $result["image"]; ?>" height="40px" width="40px" alt=""></td>
+					<td style="vertical-align: middle;">
+						<img src="<?php echo $result["image"]; ?>" height="40px" width="40px" alt="">
+					</td>
 					<td class="center">
 						<?php 
 							if ($result["type"] == 1) {
@@ -60,7 +62,8 @@
 							}
 						 ?>	
 					</td>
-					<td><a href="productview.php?viewid=<?php echo $result['productId']; ?>">View</a> | <a href="productedit.php?pid=<?php echo $result['productId']; ?>">Edit</a> | <a onclick="return confirm('Are You Sure To Delete !')" href="?delproduct=<?php echo $result['productId']; ?>">Delete</a></td>
+					<td><a href="productview.php?viewid=<?php echo $result['productId']; ?>">View</a> | <a href="productedit.php?pid=<?php echo $result['productId']; ?>">Edit</a> | <a onclick="return confirm('Are You Sure To Delete !')" href="?delproduct=<?php echo $result['productId']; ?>">Delete</a>
+					</td>
 				</tr>
 				<?php } } ?>
 			</tbody>

@@ -1,7 +1,7 @@
 <?php
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
-define("DB_PASS", "");
+define("DB_PASS", "root");
 define("DB_NAME", "db_shop");
 define("TITLE", "almodina.com");
 define("DESCRIPTION", "Programming language tutorial");
